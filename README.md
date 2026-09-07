@@ -1,7 +1,5 @@
 # weakly-compressible-subcycling-reproduction
 
-ローカルCodexへの引継ぎは [docs/HANDOFF_LOCAL_JA.md](docs/HANDOFF_LOCAL_JA.md) を最初に読む。実行場所については、この最新のローカル方針を優先する。
-
 Juliaによる独立再現です。**4.2節の気泡上昇速度・振動抑制を検証済み。4.4節の多孔質は未実装です。**
 精度と制約を含む[最終レビュー](docs/BUBBLE_REVIEW_JA.md)を参照してください。
 2026-09-07の実測・未達事項・実行ログは [docs/LOCAL_VALIDATION_JA.md](docs/LOCAL_VALIDATION_JA.md) を参照してください。
