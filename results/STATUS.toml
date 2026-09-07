@@ -11,10 +11,13 @@ bubble_standard_full_run_completed = true
 bubble_grid512_review_completed = true
 porous_solver_implemented = false
 porous_reproduced = false
-github_published = false
+github_published = true
 reference_data = "Figure 5 SVG curves; not simulation results"
 report = "docs/LOCAL_VALIDATION_JA.md"
 
 bubble_scope = "Section 4.2 velocity and oscillation suppression; documented grid/time/CSF limits"
 static_exact_equilibrium_passed = false
 final_review = "docs/BUBBLE_REVIEW_JA.md"
+
+github_bubble_commit = "d9df8786553a24de220691e55ca06c4515ff092b"
+github_bubble_tree = "8047d6bbb6b5084896b6619713a7640c28f1b722"
