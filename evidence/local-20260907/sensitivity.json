@@ -1,0 +1,122 @@
+{
+  "face_norm_choice": {
+    "runs": [
+      "bubble-face-norm",
+      "bubble-proposed-initial"
+    ],
+    "end_s": 0.07,
+    "full_interval": true,
+    "rms_difference_m_s": 0.0002809087623957365,
+    "max_difference_m_s": 0.0008739503490177991,
+    "source_hashes": [
+      "1925fd07ffdde9f578715a22b16082ea6bbd36cf98f4dbd86001266b4ea99dae",
+      "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5"
+    ],
+    "note": "No Richardson/GCI estimate; epsilon=dx changes with the grid."
+  },
+  "time_7p5_15": {
+    "runs": [
+      "bubble-proposed-factor7p5",
+      "bubble-proposed-factor15-fixed"
+    ],
+    "end_s": 0.07,
+    "full_interval": true,
+    "rms_difference_m_s": 2.531041871000922e-05,
+    "max_difference_m_s": 4.686804310204129e-05,
+    "source_hashes": [
+      "4b072cbe3050285fbec23575058d094d96feb30c974617d38ff967c56bd0b5f1",
+      "f41c3e05228cde0d6260e62a609bb4cf4835e56490001a19aea2ea25e3eedc93"
+    ],
+    "note": "No Richardson/GCI estimate; epsilon=dx changes with the grid."
+  },
+  "standard_time_half": {
+    "runs": [
+      "bubble-standard-half",
+      "bubble-standard-mg"
+    ],
+    "end_s": 0.07,
+    "full_interval": true,
+    "rms_difference_m_s": 0.0003199511869934571,
+    "max_difference_m_s": 0.0008775594126237685,
+    "source_hashes": [
+      "4b072cbe3050285fbec23575058d094d96feb30c974617d38ff967c56bd0b5f1",
+      "0bba56f1dec34aa39b2e2f9e7cc5631f8c764c3fd1d0bd622a637d85335e2076"
+    ],
+    "note": "No Richardson/GCI estimate; epsilon=dx changes with the grid."
+  },
+  "grid_128_256": {
+    "runs": [
+      "bubble-proposed-128",
+      "bubble-proposed-initial"
+    ],
+    "end_s": 0.07,
+    "full_interval": true,
+    "rms_difference_m_s": 0.00413944972047886,
+    "max_difference_m_s": 0.006243840577373511,
+    "source_hashes": [
+      "0bba56f1dec34aa39b2e2f9e7cc5631f8c764c3fd1d0bd622a637d85335e2076",
+      "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5"
+    ],
+    "note": "No Richardson/GCI estimate; epsilon=dx changes with the grid."
+  },
+  "grid_256_512": {
+    "runs": [
+      "bubble-proposed-initial",
+      "bubble-proposed-512-fixed"
+    ],
+    "end_s": 0.07,
+    "full_interval": true,
+    "rms_difference_m_s": 0.0014727158321401605,
+    "max_difference_m_s": 0.0018197335216968702,
+    "source_hashes": [
+      "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5",
+      "f41c3e05228cde0d6260e62a609bb4cf4835e56490001a19aea2ea25e3eedc93"
+    ],
+    "note": "No Richardson/GCI estimate; epsilon=dx changes with the grid."
+  },
+  "time_15_30": {
+    "runs": [
+      "bubble-proposed-factor15-fixed",
+      "bubble-proposed-initial"
+    ],
+    "end_s": 0.07,
+    "full_interval": true,
+    "rms_difference_m_s": 0.0001340134847849323,
+    "max_difference_m_s": 0.00025116750214260186,
+    "source_hashes": [
+      "f41c3e05228cde0d6260e62a609bb4cf4835e56490001a19aea2ea25e3eedc93",
+      "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5"
+    ],
+    "note": "No Richardson/GCI estimate; epsilon=dx changes with the grid."
+  },
+  "roundoff_fix": {
+    "runs": [
+      "bubble-proposed-factor15",
+      "bubble-proposed-factor15-fixed"
+    ],
+    "end_s": 0.07,
+    "full_interval": true,
+    "rms_difference_m_s": 1.3195649102352244e-09,
+    "max_difference_m_s": 2.8615242120277884e-09,
+    "source_hashes": [
+      "0bba56f1dec34aa39b2e2f9e7cc5631f8c764c3fd1d0bd622a637d85335e2076",
+      "f41c3e05228cde0d6260e62a609bb4cf4835e56490001a19aea2ea25e3eedc93"
+    ],
+    "note": "No Richardson/GCI estimate; epsilon=dx changes with the grid."
+  },
+  "backend_jacobi_multigrid": {
+    "runs": [
+      "bubble-standard-initial",
+      "bubble-standard-mg"
+    ],
+    "end_s": 0.01532593722694777,
+    "full_interval": false,
+    "rms_difference_m_s": 2.2998440132331287e-12,
+    "max_difference_m_s": 6.747955059310806e-12,
+    "source_hashes": [
+      "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5",
+      "0bba56f1dec34aa39b2e2f9e7cc5631f8c764c3fd1d0bd622a637d85335e2076"
+    ],
+    "note": "No Richardson/GCI estimate; epsilon=dx changes with the grid."
+  }
+}

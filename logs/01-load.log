@@ -1,0 +1,4 @@
+Precompiling packages...
+   3299.1 ms  ✓ WeaklyCompressibleSubcycling (serial)
+  1 dependency successfully precompiled in 3 seconds
+module loaded

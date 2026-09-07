@@ -1,0 +1,51 @@
+{
+  "bubble-proposed-128": {
+    "snapshot": {
+      "file": "field_000020.vtk",
+      "time": "0.070000000000000007"
+    },
+    "gas_area_m2": 4.971820950379714e-06,
+    "centroid_x_m": 0.0049996286385831645,
+    "centroid_y_m": 0.0147502954679837,
+    "mirror_phase_linf": 0.008085601166167189,
+    "contour_components": 1,
+    "phi_min": 9.887970570802252e-07,
+    "phi_max": 1.0015844598532802
+  },
+  "bubble-proposed-initial": {
+    "snapshot": {
+      "file": "field_000020.vtk",
+      "time": "0.07"
+    },
+    "gas_area_m2": 4.92450912986553e-06,
+    "centroid_x_m": 0.005000031691948579,
+    "centroid_y_m": 0.014751096852506135,
+    "mirror_phase_linf": 0.011420117683012543,
+    "contour_components": 1,
+    "phi_min": 6.317364556726817e-09,
+    "phi_max": 1.0007070154264437
+  },
+  "bubble-proposed-512-fixed": {
+    "snapshot": {
+      "file": "field_000020.vtk",
+      "time": "0.070000000000000007"
+    },
+    "gas_area_m2": 4.912681173479674e-06,
+    "centroid_x_m": 0.004999995303687335,
+    "centroid_y_m": 0.014785363689762363,
+    "mirror_phase_linf": 0.01438745369640515,
+    "contour_components": 1,
+    "phi_min": 1.6030942546960407e-17,
+    "phi_max": 1.0003219565733574
+  },
+  "grid_128_256": {
+    "contour_vertex_hausdorff_m": 0.000594426621646695,
+    "phase_L1_over_domain": 0.011330697402610767,
+    "note": "Contour vertex distances include sampling error; diffuse thickness changes with dx. No formal convergence order."
+  },
+  "grid_256_512": {
+    "contour_vertex_hausdorff_m": 5.6993205819900824e-05,
+    "phase_L1_over_domain": 0.0020682926570492243,
+    "note": "Contour vertex distances include sampling error; diffuse thickness changes with dx. No formal convergence order."
+  }
+}

@@ -1,0 +1,13 @@
+/results/*
+!/results/STATUS.toml
+*.log
+Manifest.toml
+!/Manifest.toml
+/.julia_depot/
+/.mplconfig/
+/.remote-review/
+!/logs/*.log
+
+/.paper-review/
+
+__pycache__/

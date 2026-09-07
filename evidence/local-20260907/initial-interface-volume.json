@@ -1,0 +1,20 @@
+[
+  {
+    "run": "bubble-proposed-128",
+    "initial_gas_area_m2": 4.971820950379713e-06,
+    "sharp_disk_area_m2": 4.908738521234052e-06,
+    "relative_excess": 0.012851046938593624
+  },
+  {
+    "run": "bubble-proposed-initial",
+    "initial_gas_area_m2": 4.92450912986553e-06,
+    "sharp_disk_area_m2": 4.908738521234052e-06,
+    "relative_excess": 0.0032127620086623843
+  },
+  {
+    "run": "bubble-proposed-512-fixed",
+    "initial_gas_area_m2": 4.912681173479673e-06,
+    "sharp_disk_area_m2": 4.908738521234052e-06,
+    "relative_excess": 0.0008031905200422962
+  }
+]

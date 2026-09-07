@@ -1,0 +1,16 @@
+relative_area_drift = 4.440892098500626e-16
+reference_sha256 = "ace7ab93c835fd3daf588932e9ae121ba818846756d66a82a0812a210c41ab1c"
+note = "These analyst-defined checks do not certify reproduction. Mesh/time refinement, oscillations and model differences require review."
+status = "velocity_checks_passed_requires_review"
+nrmse = 0.001964817698184535
+history_sha256 = "9b043bd0cba75521283dc0077c1dbea1e7c547df0700c4ec530bd7c18ef2e953"
+reference_source = "https://arxiv.org/html/2608.23110v1/rising_bubble_velocity.svg"
+maximum_error_m_s = 0.0009975433698543312
+source_sha256 = "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5"
+
+[checks]
+phase_bounds = true
+nrmse = true
+relative_gas_area_drift = true
+projected_divergence = true
+maximum_error = true

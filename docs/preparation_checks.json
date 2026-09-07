@@ -1,0 +1,14 @@
+{
+  "checks_executed": [
+    "TOML parse",
+    "workflow YAML structure",
+    "reference CSV hash and monotonic time",
+    "relative Markdown links",
+    "independent capillary and viscosity scales"
+  ],
+  "julia_syntax_checked": false,
+  "julia_tests_executed": false,
+  "bubble_simulation_executed": false,
+  "porous_simulation_executed": false,
+  "github_written": false
+}

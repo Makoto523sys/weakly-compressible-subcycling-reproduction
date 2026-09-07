@@ -1,0 +1,27 @@
+Precompiling packages...
+    590.5 ms  ✓ WeaklyCompressibleSubcycling
+  1 dependency successfully precompiled in 1 seconds. 5 already precompiled.
+  1 dependency precompiled but a different version is currently loaded (Serialization). Restart julia to access the new version. Otherwise, 1 dependent of this package may trigger further precompilation to work with the unexpected version.
+Test Summary:                                               | Pass  Total  Time
+Symmetric multigrid preconditioner and unchanged fine solve |    6      6  4.5s
+t=0.00051924827 step=2 substeps=2
+Test Summary:                                                    | Pass  Total  Time
+Checkpoint preserves all state and rejects changed configuration |   15     15  3.6s
+Test Summary:                       | Pass  Total  Time
+No roundoff-sized extra EPP substep |    6      6  0.2s
+Test Summary:                      | Pass  Total  Time
+Paper capillary timestep, SI units |    2      2  0.0s
+Test Summary:                            | Pass  Total  Time
+WENO reproduces constant and affine data |    2      2  0.0s
+Test Summary:                          | Pass  Total  Time
+Conservative divergence and phase flux |    2      2  0.2s
+Test Summary:                           | Pass  Total  Time
+Variable-density Neumann pressure solve |    2      2  0.1s
+Test Summary:                                  | Pass  Total  Time
+Pressure operator analytical Neumann eigenmode |    1      1  0.1s
+Test Summary:                                            | Pass  Total  Time
+Single-phase hydrostatic balance, including wall lifting |    5      5  0.3s
+Test Summary:                                     | Pass  Total  Time
+One-substep identity and bubble mass conservation |    6      6  0.1s
+Test Summary:                                         | Pass  Total  Time
+Outward bubble normal gives negative signed curvature |    1      1  0.2s

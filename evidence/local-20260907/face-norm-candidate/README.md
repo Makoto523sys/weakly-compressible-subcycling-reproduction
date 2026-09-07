@@ -1,0 +1,1 @@
+Diagnostic sensitivity variant only. Tangential face velocities are reconstructed with four-point averaging; horizontal no-slip walls have zero tangential speed. This tests the documented maximum-speed interpretation. It is not the official solver, nor an assertion about the authors' exact implementation.

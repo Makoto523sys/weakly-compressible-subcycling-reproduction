@@ -1,0 +1,23 @@
+Precompiling packages...
+    631.3 ms  ✓ WeaklyCompressibleSubcycling (serial)
+  1 dependency successfully precompiled in 1 seconds
+t=0.0036509644 step=15 substeps=450
+t=0.0070585312 step=29 substeps=870
+t=0.010709496 step=44 substeps=1320
+t=0.014117062 step=58 substeps=1740
+t=0.017524629 step=72 substeps=2160
+t=0.021175594 step=87 substeps=2610
+t=0.02458316 step=101 substeps=3030
+t=0.028234125 step=116 substeps=3480
+t=0.031641691 step=130 substeps=3900
+t=0.035049258 step=144 substeps=4320
+t=0.038700223 step=159 substeps=4770
+t=0.042107789 step=173 substeps=5190
+t=0.045515356 step=187 substeps=5610
+t=0.049166321 step=202 substeps=6060
+t=0.052573887 step=216 substeps=6480
+t=0.056224852 step=231 substeps=6930
+t=0.059632419 step=245 substeps=7350
+t=0.063039985 step=259 substeps=7770
+t=0.06669095 step=274 substeps=8220
+t=0.07 step=288 substeps=8628

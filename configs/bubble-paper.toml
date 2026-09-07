@@ -1,0 +1,25 @@
+# Source: arXiv:2608.23110v1, Section 4.2. SI units.
+# Documentation of the target case; run_bubble.jl currently uses Config defaults.
+status = "not_executed"
+nx = 256
+ny = 512
+lx = 0.010
+ly = 0.020
+bubble_diameter = 0.0025
+bubble_center = [0.005, 0.005]
+rho_liquid = 998.0
+rho_gas = 1.2
+mu_liquid = 0.001
+mu_gas = 0.000018
+surface_tension = 0.072
+gravity = [0.0, -9.8]
+initial_velocity = [0.0, 0.0]
+initial_pressure = 0.0
+left_right = "free_slip"
+top_bottom = "no_slip"
+epsilon_over_dx = 1.0
+epp_iterations = 10
+sound_cfl = 0.4
+proposed_capillary_factor = 30.0
+reference_end_time = 0.07
+reference_end_time_source = "Figure 5 SVG axis, visually verified"

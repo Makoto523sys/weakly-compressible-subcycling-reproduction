@@ -1,0 +1,20 @@
+status = "bubble_section_4_2_reviewed_with_documented_limits"
+date = "2026-09-08"
+julia_available = true
+julia_version = "1.12.7"
+tests_executed = true
+tests_passed = 49
+bubble_reproduced = true
+bubble_weak_full_run_completed = true
+bubble_subcycling_full_run_completed = true
+bubble_standard_full_run_completed = true
+bubble_grid512_review_completed = true
+porous_solver_implemented = false
+porous_reproduced = false
+github_published = false
+reference_data = "Figure 5 SVG curves; not simulation results"
+report = "docs/LOCAL_VALIDATION_JA.md"
+
+bubble_scope = "Section 4.2 velocity and oscillation suppression; documented grid/time/CSF limits"
+static_exact_equilibrium_passed = false
+final_review = "docs/BUBBLE_REVIEW_JA.md"

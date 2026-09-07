@@ -1,0 +1,36 @@
+# Source: arXiv:2608.23110v1, Section 4.4.
+# A specification, not an executable porous-media solver.
+status = "blocked_pending_bubble_validation"
+lx = 0.005
+ly = 0.003
+object_diameter = 0.0008
+first_column_x = 0.0006
+initial_interface_x = 0.0005
+nx = 1250
+ny = 750
+rho_liquid = 998.0
+rho_gas = 1.2
+mu_liquid = 0.001
+mu_gas = 0.000009
+surface_tension = 0.072
+gravity = [0.0, 0.0]
+inlet_liquid_velocity = 0.003
+outlet_pressure = 0.0
+top_bottom = "no_slip"
+liquid_contact_angle_degrees = 150.0
+regular_spacing = 0.001
+number_of_shifted_objects = 5
+object_y_shift_magnitude = 0.00002
+pattern_comparison_time = 0.18
+timing_comparison_end_time = 0.005
+geometry_status = "Figure 10 read; lattice centers inferred from dimensions and 60-degree arrangement"
+geometry_source = "https://arxiv.org/html/2608.23110v1/initial_settings_porous2D.png"
+column_count = 5
+column_spacing_formula = "sqrt(3)/2 * 0.001"
+even_column_y = [0.0, 0.001, 0.002, 0.003]
+odd_column_y = [0.0005, 0.0015, 0.0025]
+# Zero-based columns; y is the unshifted center. These five arrows were visually checked.
+shifted_column_y_delta = [[0, 0.002, 0.00002], [1, 0.0015, 0.00002], [2, 0.002, 0.00002], [3, 0.0015, -0.00002], [4, 0.001, -0.00002]]
+solid_flux_method = "cut_cell"
+solid_velocity_method = "immersed_boundary"
+contact_angle_method = "phase_field_extrapolation_into_solids"

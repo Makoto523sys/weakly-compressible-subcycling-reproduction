@@ -1,0 +1,13 @@
+poisson_rtol = 1.0e-9
+julia_version = "1.12.7"
+status = "measured_requires_review"
+t_end = 0.001
+expected_pressure_jump_Pa = 57.599999999999994
+dt_factor = 0.5
+
+[[runs]]
+nx = 256
+steps = 247
+peak_face_speed_bound = 0.005461467264122205
+source_sha256 = "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5"
+elapsed_seconds = 93.001919078

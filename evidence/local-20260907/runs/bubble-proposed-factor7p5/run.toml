@@ -1,0 +1,34 @@
+mode = "subcycling"
+actual_t_end = 0.07
+initial_time = 0.0
+resumed_from = ""
+source_sha256 = "4b072cbe3050285fbec23575058d094d96feb30c974617d38ff967c56bd0b5f1"
+julia_version = "1.12.7"
+snapshot_interval = 0.0035000000000000005
+status = "completed_unvalidated"
+factor = 7.5
+capillary_dt = 8.113254222841739e-6
+requested_t_end = 0.07
+elapsed_seconds = 673.491690532
+
+[config]
+poisson_maxiter = 10000
+pressure_backend = "multigrid"
+center_x = 0.005
+rho_l = 998.0
+ny = 512
+poisson_atol = 1.0e-10
+mu_l = 0.001
+sigma = 0.072
+nx = 256
+mu_g = 1.8e-5
+sound_cfl = 0.4
+weno_epsilon = 1.0e-12
+poisson_rtol = 1.0e-9
+gravity = -9.8
+lx = 0.01
+radius = 0.00125
+ly = 0.02
+center_y = 0.005
+epp_iterations = 10
+rho_g = 1.2

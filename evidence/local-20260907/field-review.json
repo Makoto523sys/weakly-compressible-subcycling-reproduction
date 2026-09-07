@@ -1,0 +1,35 @@
+{
+  "bubble-standard-mg": {
+    "snapshot": {
+      "file": "field_000020.vtk",
+      "time": "0.070000000000000007"
+    },
+    "max_cell_speed_m_s": 0.40929020893125706,
+    "pressure_min_Pa": -168.82145794479874,
+    "pressure_max_Pa": 98.3240778082514,
+    "phi_min": 7.2257487467509154e-09,
+    "phi_max": 1.0000000000010414
+  },
+  "bubble-weak-initial": {
+    "snapshot": {
+      "file": "field_000020.vtk",
+      "time": 0.07
+    },
+    "max_cell_speed_m_s": 0.46276982301289027,
+    "pressure_min_Pa": -232.44793596665852,
+    "pressure_max_Pa": 136.9599032984541,
+    "phi_min": 1.3801677967772273e-09,
+    "phi_max": 1.0023799573156082
+  },
+  "bubble-proposed-initial": {
+    "snapshot": {
+      "file": "field_000020.vtk",
+      "time": 0.07
+    },
+    "max_cell_speed_m_s": 0.41199383746036977,
+    "pressure_min_Pa": -168.37328097880425,
+    "pressure_max_Pa": 98.31565503523719,
+    "phi_min": 6.317364556726817e-09,
+    "phi_max": 1.0007070154264437
+  }
+}

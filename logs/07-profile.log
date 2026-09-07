@@ -1,0 +1,134 @@
+Precompiling packages...
+   3377.2 ms  ✓ Profile (serial)
+  1 dependency successfully precompiled in 3 seconds
+ Count  Overhead File                    Line Function
+ =====  ======== ====                    ==== ========
+   845         0 @Base/Base.jl           352 (::Base.var"#start_profile_listen…
+   845         0 @Base/Base.jl           332 profile_printing_listener(cond::B…
+    20         0 @Base/abstractarray.jl 3052 _sub2ind
+    20         0 @Base/abstractarray.jl 3068 _sub2ind
+    20         0 @Base/abstractarray.jl 3084 _sub2ind_recurse
+    20         0 @Base/abstractarray.jl 1377 _to_linear_index
+    22         0 @Base/abstractarray.jl  681 checkbounds
+    27         5 @Base/abstractarray.jl  699 checkbounds
+    21         0 @Base/abstractarray.jl  725 checkbounds_indices
+    21         0 @Base/abstractarray.jl  754 checkindex
+   104         0 @Base/abstractarray.jl  866 similar
+   104         0 @Base/abstractarray.jl  867 similar
+    90         0 @Base/array.jl          670 _array_for_inner
+    25         0 @Base/array.jl          333 _fill!
+    31        31 @Base/array.jl          991 _setindex!
+   199       197 @Base/array.jl         1003 _setindex!
+    90         0 @Base/array.jl          795 collect(itr::Base.Generator{Base.…
+    11         0 @Base/array.jl          800 collect(itr::Base.Generator{Base.…
+    11         0 @Base/array.jl          826 collect_to_with_first!
+    18         0 @Base/array.jl          354 copy
+    25         0 @Base/array.jl          329 fill!
+    30         2 @Base/array.jl          928 getindex
+    54         0 @Base/array.jl          929 getindex
+    31         0 @Base/array.jl          986 setindex!
+   200         0 @Base/array.jl          997 setindex!
+     5         0 @Base/array.jl          590 zeros
+     5         0 @Base/array.jl          592 zeros
+     5         0 @Base/array.jl          596 zeros
+   845         0 @Base/asyncevent.jl     185 _trywait(t::Base.AsyncCondition)
+   104         0 @Base/boot.jl           651 Array
+   104         0 @Base/boot.jl           661 Array
+   122       122 @Base/boot.jl           588 GenericMemory
+   845         0 @Base/boot.jl           489 eval(m::Module, e::Any)
+   104         0 @Base/boot.jl           604 new_as_memoryref
+    41         0 @Base/broadcast.jl      665 _broadcast_getindex
+    82         0 @Base/broadcast.jl      671 _broadcast_getindex
+   100         0 @Base/broadcast.jl      672 _broadcast_getindex
+   100         1 @Base/broadcast.jl      699 _broadcast_getindex_evalf
+   141         0 @Base/broadcast.jl      620 _getindex
+    82         0 @Base/broadcast.jl      695 _getindex
+    41         0 @Base/broadcast.jl      696 _getindex
+    29         0 @Base/broadcast.jl      919 copy
+   275         0 @Base/broadcast.jl      947 copyto!
+   275         0 @Base/broadcast.jl      994 copyto!
+   141         0 @Base/broadcast.jl      616 getindex
+   263         0 @Base/broadcast.jl      995 macro expansion
+    29         0 @Base/broadcast.jl      894 materialize
+   260         0 @Base/broadcast.jl      902 materialize!
+   260         0 @Base/broadcast.jl      905 materialize!
+    14         0 @Base/broadcast.jl      227 similar
+    14         0 @Base/broadcast.jl      228 similar
+   845         0 @Base/client.jl         550 _start()
+   845         0 @Base/client.jl         283 exec_options(opts::Base.JLOptions)
+     5         5 @Base/cmem.jl            28 memmove
+   845         0 @Base/condition.jl      141 wait(c::Base.GenericCondition{Bas…
+   845         0 @Base/condition.jl      136 wait
+    34        34 @Base/essentials.jl     920 getindex
+    44        44 @Base/float.jl          497 *
+    65        65 @Base/float.jl          495 +
+    38        38 @Base/float.jl          496 -
+    33        33 @Base/float.jl          498 /
+     5         0 @Base/generator.jl       48 iterate
+     5         0 @Base/genericmemory.jl  125 unsafe_copyto!
+    26        26 @Base/int.jl             87 +
+     6         6 @Base/int.jl             83 <
+    20        20 @Base/int.jl            519 <
+    41         0 @Base/multidimensional.jl  743 getindex
+   122         0 @Base/multidimensional.jl  745 setindex!
+   845         0 none                      1 top-level scope
+    35        35 @Base/promotion.jl      637 ==
+    40         6 @Base/range.jl          921 iterate
+    12         0 @Base/reduce.jl         437 _mapreduce
+     5         0 @Base/reduce.jl          19 add_sum
+     6         0 @Base/reduce.jl         258 macro expansion
+    13         0 @Base/reduce.jl         256 mapreduce_impl(f::typeof(identity…
+    10         0 @Base/reduce.jl         264 mapreduce_impl(f::typeof(identity…
+    13         0 @Base/reduce.jl         265 mapreduce_impl(f::typeof(identity…
+    13         0 @Base/reduce.jl         270 mapreduce_impl
+    12         0 @Base/reducedim.jl      983 #_sum#759
+    12         0 @Base/reducedim.jl      984 #_sum#760
+    13         0 @Base/reducedim.jl      326 #mapreduce#750
+    12         0 @Base/reducedim.jl      979 #sum#757
+    13         0 @Base/reducedim.jl      334 _mapreduce_dim
+    12         0 @Base/reducedim.jl      983 _sum
+    12         0 @Base/reducedim.jl      984 _sum
+    13         0 @Base/reducedim.jl      326 mapreduce
+    12         0 @Base/reducedim.jl      979 sum
+    10         6 @Base/simdloop.jl        75 macro expansion
+   269         0 @Base/simdloop.jl        77 macro expansion
+     6         0 @Base/simdloop.jl        78 macro expansion
+   845       845 @Base/task.jl          1216 poptask(W::Base.IntrusiveLinkedLi…
+   845         0 @Base/task.jl          1228 wait()
+    53        53 @LinearAlgebra/src/blas.jl  346 dot
+    53         0 @LinearAlgebra/src/blas.jl  396 dot
+    53         0 @LinearAlgebra/src/matmul.jl   18 dot
+    20         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  296 project!(s::State, dt::Float64, c…
+   650         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  310 project!(s::State, dt::Float64, c…
+   142         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  369 step!(s::State, dt::Float64, c::C…
+    23         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  370 step!(s::State, dt::Float64, c::C…
+   677         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  371 step!(s::State, dt::Float64, c::C…
+    97         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  185 divergence
+     8         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  141 fluxes(s::State, c::Config)
+     8         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  196 forces(phi::Matrix{Float64}, c::C…
+    29         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  331 increments(s::State, dt::Float64,…
+    92         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  334 increments(s::State, dt::Float64,…
+    15         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  335 increments(s::State, dt::Float64,…
+     5         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl   94 interface_geometry(phi::Matrix{Fl…
+   275         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  270 poisson!(p::Matrix{Float64}, b::M…
+    24         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  271 poisson!(p::Matrix{Float64}, b::M…
+   138         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  274 poisson!(p::Matrix{Float64}, b::M…
+    41        41 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  276 poisson!(p::Matrix{Float64}, b::M…
+     5         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  277 poisson!(p::Matrix{Float64}, b::M…
+    72         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  284 poisson!(p::Matrix{Float64}, b::M…
+    29         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  285 poisson!(p::Matrix{Float64}, b::M…
+    55         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  286 poisson!(p::Matrix{Float64}, b::M…
+    48        48 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl    ? pressure_operator!(out::Matrix{Fl…
+    20         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  242 pressure_operator!(out::Matrix{Fl…
+     8         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  244 pressure_operator!(out::Matrix{Fl…
+    64         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  245 pressure_operator!(out::Matrix{Fl…
+    40         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  246 pressure_operator!(out::Matrix{Fl…
+    42         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  248 pressure_operator!(out::Matrix{Fl…
+    59         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  249 pressure_operator!(out::Matrix{Fl…
+   677         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  292 project!
+    16         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  236 provisional!(s::State, old::State…
+     6         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl   73 sample
+     5         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl   89 sample
+   844         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  340 step!
+    25         0 @WeaklyCompressibleSubcycling/…ressibleSubcycling.jl  253 zero_mean!(q::Matrix{Float64})
+Total snapshots: 1690. Utilization: 50% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.

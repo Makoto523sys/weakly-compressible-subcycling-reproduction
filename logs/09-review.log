@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/uh488080/workspace/weakly-compressible-subcycling-reproduction/scripts/review_local.py", line 40, in <module>
+    "nrmse": float(np.sqrt(np.trapezoid(err**2, t)/(t[-1]-t[0]))/scale),
+                           ^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/numpy/__init__.py", line 333, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'trapezoid'

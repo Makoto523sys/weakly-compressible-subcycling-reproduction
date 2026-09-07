@@ -1,0 +1,3 @@
+(name = "baseline", flux_seconds = 0.026127009649999998, bytes = 1.15544036e7)
+(name = "candidate", flux_seconds = 0.01907675305, bytes = 1.15538e7)
+All state fields bitwise identical after 3 paper-grid steps

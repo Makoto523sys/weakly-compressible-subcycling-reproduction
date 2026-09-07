@@ -1,0 +1,93 @@
+name: Julia verification (not a reproduction certificate)
+
+on:
+  push:
+    branches: ["validation/**"]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      full_paper:
+        description: "Run all three 256x512 bubble cases to 0.07 s after smoke checks"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: julia-actions/setup-julia@v3
+        with:
+          version: '1.12.7'
+      - name: Unit tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p results
+          julia --project=. test/runtests.jl 2>&1 | tee results/unit-tests.log
+      - name: Three short coarse bubble cases
+        shell: bash
+        run: |
+          set -euo pipefail
+          julia --project=. scripts/run_bubble.jl standard 32 1 0.001 results/smoke-standard 2>&1 | tee results/smoke-standard.log
+          julia --project=. scripts/run_bubble.jl weak 32 1 0.001 results/smoke-weak 2>&1 | tee results/smoke-weak.log
+          julia --project=. scripts/run_bubble.jl subcycling 32 30 0.001 results/smoke-proposed 2>&1 | tee results/smoke-proposed.log
+      - name: Preserve logs and fields, including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: julia-verification-${{ github.sha }}
+          path: results/
+          retention-days: 30
+
+  bubble-paper:
+    if: github.event_name == 'workflow_dispatch' && inputs.full_paper
+    needs: verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - mode: standard
+            factor: 1
+          - mode: weak
+            factor: 1
+          - mode: subcycling
+            factor: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: julia-actions/setup-julia@v3
+        with:
+          version: '1.12.7'
+      - name: Run the paper bubble case
+        shell: bash
+        env:
+          SOLVER_MODE: ${{ matrix.mode }}
+          CAPILLARY_FACTOR: ${{ matrix.factor }}
+        run: |
+          set -euo pipefail
+          julia --project=. scripts/run_bubble.jl "$SOLVER_MODE" 256 "$CAPILLARY_FACTOR" 0.07 "results/bubble-$SOLVER_MODE" 2>&1 | tee "results/bubble-$SOLVER_MODE.log"
+      - name: Numerical comparison with Figure 5
+        if: matrix.mode != 'weak'
+        shell: bash
+        env:
+          SOLVER_MODE: ${{ matrix.mode }}
+        run: |
+          set -euo pipefail
+          julia --project=. scripts/compare_bubble.jl "results/bubble-$SOLVER_MODE" reference/bubble_standard.csv reference/bubble_standard.toml "results/comparison-$SOLVER_MODE.toml"
+      - name: Preserve computation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubble-${{ matrix.mode }}-${{ github.sha }}
+          path: results/
+          retention-days: 30

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/uh488080/workspace/weakly-compressible-subcycling-reproduction/scripts/review_sensitivity.py", line 22, in <module>
+    x,mx=load(a);y,my=load(b)
+                      ^^^^^^^
+  File "/home/uh488080/workspace/weakly-compressible-subcycling-reproduction/scripts/review_sensitivity.py", line 12, in load
+    return ({k:np.array([float(q[k]) for q in rows]) for k in keys},
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

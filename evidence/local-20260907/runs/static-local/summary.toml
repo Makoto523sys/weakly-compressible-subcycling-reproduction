@@ -1,0 +1,23 @@
+julia_version = "1.12.7"
+status = "measured_requires_review"
+t_end = 0.001
+expected_pressure_jump_Pa = 57.599999999999994
+
+[[runs]]
+nx = 64
+steps = 16
+peak_face_speed_bound = 0.006070009552530826
+source_sha256 = "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5"
+elapsed_seconds = 0.223806363
+[[runs]]
+nx = 128
+steps = 44
+peak_face_speed_bound = 0.003315592486170412
+source_sha256 = "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5"
+elapsed_seconds = 3.220342315
+[[runs]]
+nx = 256
+steps = 124
+peak_face_speed_bound = 0.005463892745166778
+source_sha256 = "1a00ed5d3b2e7051a17239f992e0453c461c5e0e6bdf51cef10c5573f66c38e5"
+elapsed_seconds = 45.345157326

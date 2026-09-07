@@ -1,0 +1,24 @@
+{
+  "weak": {
+    "interval_s": [
+      0.03,
+      0.07
+    ],
+    "velocity_residual_peak_to_peak_m_s": 0.07207484179161006,
+    "negative_velocity_increment_count": 3839,
+    "number_of_increments": 8628,
+    "final_centroid_y_m": 0.01497857742489056,
+    "note": "Residual against digitized standard curve, not a frequency-filtered acoustic amplitude."
+  },
+  "proposed": {
+    "interval_s": [
+      0.03,
+      0.07
+    ],
+    "velocity_residual_peak_to_peak_m_s": 0.0010118378514791526,
+    "negative_velocity_increment_count": 0,
+    "number_of_increments": 288,
+    "final_centroid_y_m": 0.014751096852506139,
+    "note": "Residual against digitized standard curve, not a frequency-filtered acoustic amplitude."
+  }
+}

@@ -1,0 +1,1 @@
+Dict{String, Any}("nx" => 512, "steps" => 349, "peak_face_speed_bound" => 0.008025079624429754, "source_sha256" => "2ae54ec8ff8bce0fc76e72b8d7f39c67798b83ad14db6fac51e120d10f700aab", "elapsed_seconds" => 416.493657663)

@@ -1,0 +1,4 @@
+(nx = 32, factor = 15, substeps = 16)
+(nx = 32, factor = 30, substeps = 31)
+(nx = 256, factor = 15, substeps = 16)
+(nx = 256, factor = 30, substeps = 30)

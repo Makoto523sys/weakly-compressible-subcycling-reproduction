@@ -1,0 +1,9 @@
+source_url = "https://arxiv.org/html/2608.23110v1/rising_bubble_velocity.svg"
+figure = 5
+method = "visible_SVG_polyline_vertices"
+time_unit = "s"
+velocity_unit = "m/s"
+digitization_uncertainty_m_s = 0.0005
+uncertainty_basis = "analyst working allowance for curve simplification; not author-supplied"
+curve = "standard"
+sha256 = "ace7ab93c835fd3daf588932e9ae121ba818846756d66a82a0812a210c41ab1c"
