@@ -1,0 +1,30 @@
+steps = 708
+speed_bound_m_s = 0.022099064758292118
+phi_max_all_steps = 1.0002719178960982
+nominal_dt_s = 2.8281739830889655e-5
+nx = 250
+julia_version = "1.12.7"
+transport_seconds_including_first_JIT = 17.538499589999983
+status = "prescribed_velocity_transport_only_not_CFD"
+group_divergence_linf_per_s = 7.746207292507956e-9
+phi_min_all_steps = 0.0
+time_s = 0.02
+note = "Fixed single-density projected face velocity; no viscosity, CSF, two-phase pressure coupling or no-slip flow solution. Geometry is Figure 10, grid is diagnostic. No pressure or invasion reproduction claim."
+boundary_phase_integral_m2 = 1.8000000000000429e-7
+ny = 150
+max_relative_balance_error = 2.9637256678068394e-15
+transport_allocated_bytes = 5481361728
+liquid_area_final_m2 = 1.1624376755967786e-6
+liquid_area_initial_m2 = 9.824376755967772e-7
+timestep_factor = 0.5
+contact_angle_deg = 150.0
+max_balance_error_m2 = 2.9116757561866574e-21
+
+[source_sha256]
+"WallGeometry.jl" = "8fba8fb8cbe5e3d4ddc64233faf15d8da1bdb384c123debb69558b33134668a5"
+"ExplicitPressure.jl" = "c0c12397045344b4467c620131d1b82ab796e58a9cf83f880ce1f750647a13f7"
+"Projection.jl" = "3c12ed527d1ad08cce396a792bed23f99c2f247ad56c2d77dac784e6afee1862"
+"PorousMedia.jl" = "c84ac833e30e4c3596425c016a08b4fc2c7aa85588b22dcb6d2fa523a868b3c9"
+"BoundaryCurvature.jl" = "ef05672769685f7317af21e619e46e025f7bf435d44f0d1e2a40b93172a9516c"
+"GraphMultigrid.jl" = "6a461d8242afb80ab99ca491d536adf9d1cfde672dde7028098b366de3b584fa"
+"Transport.jl" = "f8bed34647815a1957b8e01cf943e1295d622931147337d1bb096228e1f990af"

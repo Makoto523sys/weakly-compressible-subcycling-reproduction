@@ -1,0 +1,11 @@
+{
+  "porous/src/BoundaryCurvature.jl": "ef05672769685f7317af21e619e46e025f7bf435d44f0d1e2a40b93172a9516c",
+  "porous/src/GraphMultigrid.jl": "6a461d8242afb80ab99ca491d536adf9d1cfde672dde7028098b366de3b584fa",
+  "porous/src/PorousMedia.jl": "6e91473f30c066d68d7eba1f716b548794df13f5fa9867893a5392a19a082c5a",
+  "porous/src/Projection.jl": "3c12ed527d1ad08cce396a792bed23f99c2f247ad56c2d77dac784e6afee1862",
+  "porous/src/WallGeometry.jl": "8fba8fb8cbe5e3d4ddc64233faf15d8da1bdb384c123debb69558b33134668a5",
+  "porous/test/runtests.jl": "f25ecf0267979cf649a334338ffb84a321554e1f821ca2a854e3da03f4e3f275",
+  "porous/validate_curved_contact.jl": "438de3ff2c508b8777b614f969eb647a9a963059ed38fef47efbec18d5d9d5b6",
+  "porous/validate_paper_geometry.jl": "8aea7aff75938793a5d371d9b62a91206de900e7b6b6d580ff00f7feeb96ce88",
+  "porous/validate_wall_stress.jl": "b378ffbd64f79f97b8eeaf181e0ea22671b3d2b7e364d34c6466a156bd7f5636"
+}

@@ -1,0 +1,4 @@
+{
+  "nominal_current_phase_bitwise_equal": true,
+  "note": "Prescribed face velocities; momentum changes cannot feed back into phase in this diagnostic."
+}

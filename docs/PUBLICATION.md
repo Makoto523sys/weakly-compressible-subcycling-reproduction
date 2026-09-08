@@ -11,3 +11,9 @@ Local intermediate commits remain on local-validation-work; the connector public
 Local git push has no credential helper; the connector has verified push permission.
 
 Only the reviewed bubble work was published. Porous development after this point is not a reproduction result.
+
+## Porous development publication
+
+Following the user’s additional publication instruction, the component-verified porous development is included. All 71 porous tests passed again before publication (logs/72-porous-prepublication-tests.log). Complete two-phase coupling, static contact-drop CFD and section 4.4 reproduction remain unfinished, as recorded in STATUS.toml and docs/POROUS_PROGRESS_JA.md.
+
+The latest remote main, `cc8a27077398d6e082a9b82d999ffdfcd00a0083`, removes the opening local-handoff sentence from README. That remote edit is retained. Local source and evidence were reviewed at `5f85b1a`; this publication adds status documentation and the repeated test log. Earlier “local only” and pause notes are historical.

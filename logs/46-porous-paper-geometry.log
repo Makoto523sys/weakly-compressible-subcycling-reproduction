@@ -1,0 +1,22 @@
+Geometry seconds: 0.278739916 allocated bytes: 51170736
+ERROR: LoadError: Isolated tiny fluid control volume
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:44
+ [2] control_volumes(g::CutGeometry; minimum_fraction::Float64)
+   @ Main.PorousMedia ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:30
+ [3] control_volumes
+   @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:9 [inlined]
+ [4] macro expansion
+   @ ./timing.jl:697 [inlined]
+ [5] main()
+   @ Main ~/workspace/weakly-compressible-subcycling-reproduction/porous/validate_paper_geometry.jl:14
+ [6] top-level scope
+   @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/validate_paper_geometry.jl:38
+ [7] include(mod::Module, _path::String)
+   @ Base ./Base.jl:306
+ [8] exec_options(opts::Base.JLOptions)
+   @ Base ./client.jl:317
+ [9] _start()
+   @ Base ./client.jl:550
+in expression starting at /home/uh488080/workspace/weakly-compressible-subcycling-reproduction/porous/validate_paper_geometry.jl:38

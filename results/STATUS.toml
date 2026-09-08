@@ -1,4 +1,4 @@
-status = "bubble_section_4_2_reviewed_with_documented_limits"
+status = "bubble_published_porous_transport_and_pressure_components_verified"
 date = "2026-09-08"
 julia_available = true
 julia_version = "1.12.7"
@@ -21,3 +21,17 @@ final_review = "docs/BUBBLE_REVIEW_JA.md"
 
 github_bubble_commit = "d9df8786553a24de220691e55ca06c4515ff092b"
 github_bubble_tree = "8047d6bbb6b5084896b6619713a7640c28f1b722"
+
+porous_components_implemented = true
+porous_component_tests_passed = 71
+porous_coupled_time_integrator_implemented = false
+porous_static_contact_drop_verified = false
+porous_capillary_entry_verified = false
+porous_components_published = true
+active_agent_jobs = 0
+pause_report = "docs/PAUSE_20260908_JA.md"
+porous_progress_report = "docs/POROUS_PROGRESS_JA.md"
+porous_conservative_transport_implemented = true
+porous_viscous_predictor_implemented = true
+porous_explicit_pressure_component_implemented = true
+porous_prescribed_velocity_transport_verified = true

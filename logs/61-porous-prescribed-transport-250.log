@@ -1,0 +1,19 @@
+ERROR: LoadError: Isolated tiny fluid control volume at (46,12), fraction=2.2648549702353193e-14
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:44
+ [2] control_volumes(g::CutGeometry; minimum_fraction::Float64)
+   @ Main.PorousMedia ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:30
+ [3] control_volumes
+   @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:9 [inlined]
+ [4] main()
+   @ Main ~/workspace/weakly-compressible-subcycling-reproduction/porous/validate_transport.jl:15
+ [5] top-level scope
+   @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/validate_transport.jl:59
+ [6] include(mod::Module, _path::String)
+   @ Base ./Base.jl:306
+ [7] exec_options(opts::Base.JLOptions)
+   @ Base ./client.jl:317
+ [8] _start()
+   @ Base ./client.jl:550
+in expression starting at /home/uh488080/workspace/weakly-compressible-subcycling-reproduction/porous/validate_transport.jl:59

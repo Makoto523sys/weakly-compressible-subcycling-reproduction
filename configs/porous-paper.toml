@@ -1,6 +1,6 @@
 # Source: arXiv:2608.23110v1, Section 4.4.
 # A specification, not an executable porous-media solver.
-status = "blocked_pending_bubble_validation"
+status = "bubble_review_completed_porous_coupling_under_development"
 lx = 0.005
 ly = 0.003
 object_diameter = 0.0008

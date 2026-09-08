@@ -1,0 +1,20 @@
+Test Summary:           | Pass  Total  Time
+Exact disk cut geometry |   18     18  1.7s
+Test Summary:                                                | Pass  Total  Time
+Cut-volume transport conserves phase and consistent momentum |    7      7  3.9s
+Test Summary:                                           | Pass  Total  Time
+Smooth advection rate on an unobstructed grid converges |    2      2  0.2s
+Test Summary:                                                 | Pass  Total  Time
+Stationary immersed wall, manufactured normal-linear velocity |    4      4  0.4s
+Test Summary:                                                | Pass  Total  Time
+Liquid-side contact angle, planar affine interface extension |    6      6  0.1s
+Test Summary:                                                     | Pass  Total  Time
+Conservative tiny-cell agglomeration and open-boundary projection |    7      7  0.2s
+Test Summary:                                         | Pass  Total  Time
+Paper grid has no phantom fluid in wholly solid cells |    5      5  0.3s
+Test Summary:                                                               | Pass  Total  Time
+Cut-cell graph multigrid is symmetric positive and solves the same equation |    4      4  0.1s
+Test Summary:                                         | Pass  Total  Time
+Cut boundary normals close every fluid control volume |    3      3  0.3s
+Test Summary:                                                       | Pass  Total  Time
+Fluid-side curved contact curvature excludes arbitrary solid values |    4      4  1.0s

@@ -1,0 +1,10 @@
+{
+  "scope": "Timestep comparison of prescribed-velocity phase transport, not two-phase CFD",
+  "volume_weighted_l1_phase_difference": 1.5918239074136125e-05,
+  "volume_weighted_rms_phase_difference": 0.00012511981166571436,
+  "fluid_linf_phase_difference": 0.0024678345225869203,
+  "inputs_sha256": {
+    "results/porous-transport-250-fixed/phase.csv": "815d7fca14a970f49f623eb3ecf0ee39733c3c7ac41dc66bb3899c62f6680ddb",
+    "results/porous-transport-250-half/phase.csv": "6d071d2a037f049f8778d3b7affebee4f734ea2090bdead8c09e7efefaa106f6"
+  }
+}

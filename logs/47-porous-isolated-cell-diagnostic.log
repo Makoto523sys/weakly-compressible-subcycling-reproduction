@@ -1,0 +1,16 @@
+ERROR: Isolated tiny fluid control volume at (123,5), fraction=1.6542323066914832e-14
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:44
+ [2] control_volumes(g::CutGeometry; minimum_fraction::Float64)
+   @ Main.PorousMedia ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:30
+ [3] control_volumes(g::CutGeometry)
+   @ Main.PorousMedia ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:9
+ [4] top-level scope
+   @ none:1
+ [5] eval(m::Module, e::Any)
+   @ Core ./boot.jl:489
+ [6] exec_options(opts::Base.JLOptions)
+   @ Base ./client.jl:283
+ [7] _start()
+   @ Base ./client.jl:550

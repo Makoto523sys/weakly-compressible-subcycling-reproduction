@@ -1,6 +1,6 @@
 # weakly-compressible-subcycling-reproduction
 
-Juliaによる独立再現です。**4.2節の気泡上昇速度・振動抑制を検証済み。4.4節の多孔質は未実装です。**
+Juliaによる独立再現です。**4.2節の気泡上昇速度・振動抑制を検証済み。4.4節は基礎部品をローカル検証中で、連成二相流は未実装です。**
 精度と制約を含む[最終レビュー](docs/BUBBLE_REVIEW_JA.md)を参照してください。
 2026-09-07の実測・未達事項・実行ログは [docs/LOCAL_VALIDATION_JA.md](docs/LOCAL_VALIDATION_JA.md) を参照してください。
 
@@ -19,8 +19,8 @@ Juliaによる独立再現です。**4.2節の気泡上昇速度・振動抑制�
 | 保存性・圧力補正等のテスト | 既存21件＋前処理・substep丸め・再開・メモリ保護の検証、合計49件が合格 |
 | 図5の参照曲線 | SVGから抽出済み、出典・校正式・ハッシュを保存 |
 | 気泡上昇の論文比較 | 3方式256×512・0.07秒、512格子・時間感度のレビュー完了。NRMSE約0.18–0.21%、細格子への速度感度約0.82% |
-| 多孔質媒体 | 図10・本文の条件整理済み。ソルバー未実装 |
-| GitHub | 気泡の検証結果を公開済み（d9df878）。多孔質はローカルで開発開始 |
+| 多孔質媒体 | 部品71テスト、保存的な相・運動量輸送、壁粘性力、EPPの圧力更新を確認。完全な連成二相流は未実装 |
+| GitHub | 気泡の検証結果を公開済み（d9df878）。多孔質は検証済み部品と開発記録を公開。再現は未達 |
 
 ローカルではJulia 1.12.7、Core Ultra 7 265、約31 GiB RAMを確認しました。
 静止気泡には圧力差約1.3%の誤差と寄生流が残ります。原因診断と、上昇問題の格子・時間・保存性検証を含めて再現範囲を判断しました。
@@ -75,7 +75,7 @@ julia --project=. scripts/compare_bubble.jl results/bubble-proposed reference/bu
 ## 再現判定と次の作業
 
 [docs/VALIDATION.md](docs/VALIDATION.md) に判定基準を示します。
-4.4節は気泡上昇の検証後に実装します。円柱を単なる格子マスクに置き換えたり、
+4.4節は基礎部品の実装・検証を進めています。円柱を単なる格子マスクに置き換えたり、
 接触角を省略した計算を論文再現と扱うことはしません。
 
 `.github/workflows/validate.yml` は、Juliaを利用できるGitHub Actionsで
@@ -84,3 +84,6 @@ julia --project=. scripts/compare_bubble.jl results/bubble-proposed reference/bu
 論文規模の計算は手動起動のみで、各ジョブに時間上限を設けます。
 
 アップロード先：[Makoto523sys/weakly-compressible-subcycling-reproduction](https://github.com/Makoto523sys/weakly-compressible-subcycling-reproduction)
+
+ユーザーの再開指示を受け、多孔質の輸送・粘性・圧力更新を開発しました。
+最新の実測と未達事項は[多孔質の進捗](docs/POROUS_PROGRESS_JA.md)、以前の中断状態は[中断メモ](docs/PAUSE_20260908_JA.md)を参照してください。

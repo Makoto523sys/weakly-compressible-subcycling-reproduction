@@ -1,0 +1,28 @@
+control_volumes = 466254
+pressure_backend = "Galerkin aggregation multigrid PCG"
+minimum_merged_fraction = 0.5003509837212515
+fluid_area_m2 = 7.460177631384495e-6
+nx = 1250
+julia_version = "1.12.7"
+absolute_pressure_residual = 2.9985464333289397e-12
+status = "geometry_and_single_projection_only"
+projection_allocated_bytes = 701622624
+group_divergence_linf_per_s = 7.890725794472945e-8
+exact_fluid_area_m2 = 7.460177631384497e-6
+minimum_raw_cut_fraction = 1.1468603844377867e-13
+inlet_area_flux_m2_s = 9.00000000000001e-6
+note = "Constant liquid density, one pressure projection; no viscous flow, two-phase transport or contact-line simulation"
+ny = 750
+geometry_allocated_bytes = 51170736
+projection_seconds = 2.931496474
+relative_flow_mismatch = 7.391774186372519e-13
+porosity = 0.497345175425633
+outlet_area_flux_m2_s = 8.999999999993358e-6
+dx_m = 4.0e-6
+pressure_iterations = 166
+geometry_seconds = 0.236732182
+
+[source_sha256]
+"Projection.jl" = "3c12ed527d1ad08cce396a792bed23f99c2f247ad56c2d77dac784e6afee1862"
+"PorousMedia.jl" = "21c7b557aab8fa9284aeecd5dba9f68c30786a8a153e76b481ce503973b88ea3"
+"GraphMultigrid.jl" = "6a461d8242afb80ab99ca491d536adf9d1cfde672dde7028098b366de3b584fa"

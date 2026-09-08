@@ -1,0 +1,27 @@
+Geometry seconds: 0.239858557 allocated bytes: 51170736
+Control volumes: 466254 seconds: 0.118098897
+ERROR: LoadError: Cut-cell pressure solve did not converge
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] graph_pcg!(p::Vector{Float64}, b::Vector{Float64}, a::Main.PorousMedia.PressureGraph; rtol::Float64, maxiter::Int64)
+    @ Main.PorousMedia ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:110
+  [3] graph_pcg!
+    @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:97 [inlined]
+  [4] project_cut!(uf::Matrix{Float64}, vf::Matrix{Float64}, p::Vector{Float64}, dt::Float64, g::CutGeometry, cv::Main.PorousMedia.ControlVolumes, rho::Matrix{Float64}; inlet_velocity::Float64, rtol::Float64)
+    @ Main.PorousMedia ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:126
+  [5] project_cut!
+    @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/src/Projection.jl:121 [inlined]
+  [6] macro expansion
+    @ ./timing.jl:697 [inlined]
+  [7] main()
+    @ Main ~/workspace/weakly-compressible-subcycling-reproduction/porous/validate_paper_geometry.jl:20
+  [8] top-level scope
+    @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/validate_paper_geometry.jl:38
+  [9] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [10] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [11] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/uh488080/workspace/weakly-compressible-subcycling-reproduction/porous/validate_paper_geometry.jl:38

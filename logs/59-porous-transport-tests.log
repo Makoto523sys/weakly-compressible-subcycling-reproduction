@@ -1,0 +1,20 @@
+Test Summary:           | Pass  Total  Time
+Exact disk cut geometry |   18     18  1.5s
+Cut-volume transport conserves phase and consistent momentum: Test Failed at /home/uh488080/workspace/weakly-compressible-subcycling-reproduction/porous/test/runtests.jl:56
+  Expression: maximum(abs.(phi[cv.owner .> 0] .- 0.37)) < 1.0e-11
+   Evaluated: 0.0010239466554877175 < 1.0e-11
+
+Stacktrace:
+ [1] top-level scope
+   @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/test/runtests.jl:28
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.7+0.x64.linux.gnu/share/julia/stdlib/v1.12/Test/src/Test.jl:1777 [inlined]
+ [3] macro expansion
+   @ ~/workspace/weakly-compressible-subcycling-reproduction/porous/test/runtests.jl:56 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.7+0.x64.linux.gnu/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+Test Summary:                                                | Pass  Fail  Total  Time
+Cut-volume transport conserves phase and consistent momentum |    6     1      7  4.8s
+RNG of the outermost testset: Random.Xoshiro(0xc713d76f43ac18b8, 0x50c62513652f085f, 0x2b45dbacc138d78a, 0xfad324fcedb2a10d, 0x6d8993f3b937cee2)
+ERROR: LoadError: Some tests did not pass: 6 passed, 1 failed, 0 errored, 0 broken.
+in expression starting at /home/uh488080/workspace/weakly-compressible-subcycling-reproduction/porous/test/runtests.jl:27
